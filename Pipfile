@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-cleanup = "*"
+django-widget-tweaks = "*"
+crispy-bootstrap5 = "*"
+django-recaptcha = "*"
+requests = "*"
+django-two-factor-auth = {extras = ["phonenumbers"], version = "*"}
+django-auto-logout = "*"
+pytz = "*"
+django-environ = "*"
+django-axes = "*"
+django-admin-honeypot = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

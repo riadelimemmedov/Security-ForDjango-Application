@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Account Lock Brute Force {% endblock title %}
+
+{% block content %}
+    <div class="container bg-white shadow border p-5 mt-5 form-layout">
+        <div class="text-center">
+            <i class="fa fa-lock fa-4x mb-4 text-dark" aria-hidden="true"></i>
+            <h4 class="text-uppercase mb-2 text-danger fs-3">Account Locked</h4><hr>
+            <p>You have been locket out of your account due to multiple failed login attempts.</p>
+            <p>You may re-attempt to login to your account after expiry period.</p>
+            <a href="{% url 'secure:homeView' %}" type="button" class="btn btn-info border rounded">
+                Return to home
+            </a>
+        </div>
+    </div>
+{% endblock content %}
+

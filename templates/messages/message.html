@@ -1,0 +1,10 @@
+{% for message in messages %}<!-- !Or check message type ===> message.level == DEFAULT_MESSAGE_LEVELS.<MESSAGE_TYPE>  -->
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show w-50 container mb-4 border rounded" role="alert">
+        <strong>{{message}}
+            {% if message.tags == 'success' %}
+                &nbsp; <i class="fa fa-check" aria-hidden="true"></i>
+            {% endif %}
+        </strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endfor %}

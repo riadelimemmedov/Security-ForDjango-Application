@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+    <body>
+        <br>
+        <br>
+        {% if messages %}
+            {% include "messages/message.html" %}
+        {% endif %}
+        <div class="text-center">   
+            <img src="https://random.imagecdn.app/500/150" class="img-fluid border rounded shadow" style="height:200px;width:500px;">
+            <br>
+            <br>
+            <h3> SecureX .... The most secure website out there! </h3>
+            <br>
+            <p> Ensure that your Django web application is secure in all areas. </p>
+            <br>
+            <a class="btn btn-info" type="button" href=""> <i class="fa fa-user" aria-hidden="true"></i>
+                &nbsp; Make an account </a>
+        </div>
+    </body>
+    
+    <footer class="navbar navbar-expand-lg navbar-light bg-white justify-content-center mt-4">
+        <a class="btn btn-warning p-2 border rounded shadow" type="button" href="{% url 'secure:reset_password' %}"> 
+            <i class="fa fa-key" aria-hidden="true"></i>
+            &nbsp;Forgetten your password?</a> 
+        </a>
+    </footer>
+{% endblock content %}
