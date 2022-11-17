@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
     'captcha',
-    'axes',
+    'axes',# or used => https://github.com/jazzband/django-defender
     'admin_honeypot',
     
     #two factor authentication
